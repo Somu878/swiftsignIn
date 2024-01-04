@@ -1,0 +1,60 @@
+.signinContainer {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 35vw;
+  height: auto;
+}
+.signin {
+  margin-top: 40px;
+  margin-left: 40%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+}
+form label {
+  font-size: 20px;
+}
+form input {
+  margin-bottom: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+input {
+  width: 75%;
+  height: 40px;
+}
+p {
+  margin-left: 80px;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+button {
+  margin-left: 80px;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid rgb(230, 224, 224);
+  outline: none;
+  background: transparent;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+button:hover {
+  color: black;
+  background-color: rgb(230, 224, 224);
+}
