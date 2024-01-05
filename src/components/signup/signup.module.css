@@ -37,9 +37,9 @@ input {
 p {
   margin-left: 80px;
 }
-a {
+.signinRoute {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(42, 64, 131);
 }
 button {
   margin-left: 80px;

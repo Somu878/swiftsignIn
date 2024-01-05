@@ -31,11 +31,11 @@ function Signup() {
 
   return (
     <div className={styles.signupContainer}>
-      <div className={styles.signup}>Signup</div>
+      <div className={styles.signup}>Sign Up</div>
       <form>
         <label htmlFor="email">Email</label>
         <input
-          type="text"
+          type="email"
           name="email"
           value={email}
           required
@@ -51,7 +51,10 @@ function Signup() {
         />
       </form>
       <p>
-        Already have an account? <a href="/signin">Login</a>
+        Already have an account?{" "}
+        <a className={styles.signupRoute} href="/signin">
+          Login
+        </a>
       </p>
       <button onClick={handleSignup} disabled={loading}>
         {loading ? "Signing up..." : "Signup"}

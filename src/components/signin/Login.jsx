@@ -3,6 +3,7 @@ import styles from "./signin.module.css";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "../../config";
+
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState(undefined);
@@ -25,11 +26,11 @@ function Login() {
 
   return (
     <div className={styles.signinContainer}>
-      <div className={styles.signin}>Signin</div>
+      <div className={styles.signin}>Sign In</div>
       <form>
         <label htmlFor="email">Email</label>
         <input
-          type="text"
+          type="email"
           name="email"
           value={email}
           required
@@ -43,9 +44,15 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        <a style={{ color: "dodgerblue" }} href="/forgotpassword">
+          Forgot Password
+        </a>
       </form>
       <p>
-        Don't have an account? <a href="/signup">Signup </a>
+        Don't have an account?{" "}
+        <a className={styles.signupRoute} href="/signup">
+          Signup{" "}
+        </a>
       </p>
       <button disabled={loading} onClick={handleLogin}>
         {loading ? "..." : "signin"}
