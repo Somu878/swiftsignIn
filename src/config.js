@@ -2,13 +2,13 @@ import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDMv1BZTJAeUd5bJ4aY89ayPHVVrvNG_7Q",
-  authDomain: "swiftsignin-6bb10.firebaseapp.com",
-  projectId: "swiftsignin-6bb10",
-  storageBucket: "swiftsignin-6bb10.appspot.com",
-  messagingSenderId: "958276056007",
-  appId: "1:958276056007:web:a807bb115b7e06686f9fe2",
-  measurementId: "G-J6EB88V29C",
+  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAINn,
+  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_APP_FIREBASE_MEASUREMENT_ID,
 };
 const app = initializeApp(firebaseConfig);
 export const firebaseAuth = getAuth(app);
