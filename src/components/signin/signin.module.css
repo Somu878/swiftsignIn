@@ -17,7 +17,6 @@
 form {
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
 }
 form label {
   font-size: 20px;
@@ -42,9 +41,6 @@ p {
   color: dodgerblue;
 }
 button {
-  margin-left: 80px;
-  width: 100px;
-  height: 30px;
   border-radius: 20px;
   border: 2px solid rgb(230, 224, 224);
   outline: none;
@@ -53,7 +49,9 @@ button {
   text-transform: uppercase;
   margin-bottom: 40px;
   font-weight: 600;
+  width: auto;
 }
+
 button:hover {
   color: black;
   background-color: rgb(230, 224, 224);

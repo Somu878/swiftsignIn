@@ -54,8 +54,8 @@ function Login() {
           Signup{" "}
         </a>
       </p>
-      <button disabled={loading} onClick={handleLogin}>
-        {loading ? "..." : "signin"}
+      <button disabled={loading || !email || !password} onClick={handleLogin}>
+        {loading ? "Please Wait.." : "Sign In"}
       </button>
     </div>
   );

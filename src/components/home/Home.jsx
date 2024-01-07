@@ -16,6 +16,7 @@ function Home() {
     <div className={styles.homeContainer}>
       {" "}
       <h1>Welcome {user?.email}</h1>
+      <a href="/updateEmail">Update Email</a>
       <button
         style={{ width: "130px", marginLeft: "-15px" }}
         onClick={() => signOut(firebaseAuth)}

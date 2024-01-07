@@ -46,6 +46,7 @@ function Signup() {
         <input
           type="password"
           value={password}
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           onChange={(e) => setPassword(e.target.value)}
           required
         />
